@@ -1,0 +1,35 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+img {
+    width: 18em;
+    height: 12em;
+}
+
+.card {
+    background-color: rgb(255, 165, 0);
+    border-shadow: 1px 1px 5px black;
+    padding: 2em 2em 1em 2em;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.card img {
+    
+}
+
+.card p {
+    margin-top: 1em;
+}
+
+.card:hover {
+    background-color: rgb(255, 255, 255);
+    color: orange;
+}
