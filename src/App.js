@@ -19,7 +19,7 @@ const App = () => {
   const [game, setGame] = useState(
     {
       score: 0,
-      highscore: 0,
+      highscore: localStorage.getItem("highscore") || 0,
       cards: [
         {
           name: "Naruto Uzumaki",
@@ -87,7 +87,6 @@ const App = () => {
 
   useEffect(() => {
 
-
     const gameCards = [];
 
     for (let i = 0; i < game.cards.length; i++) {
@@ -129,6 +128,7 @@ const App = () => {
           cards: newGameCards
         }
       )
+      localStorage.setItem("highscore", game.score);
     }
   }
 
