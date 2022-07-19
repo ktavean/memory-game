@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.277e1ef0.css",
+    "main.js": "/memory-game/static/js/main.b73d8488.js",
+    "static/media/sakura.png": "/memory-game/static/media/sakura.0f0d7ac34d764a05d231.png",
+    "static/media/shikamaru.png": "/memory-game/static/media/shikamaru.0aac33938474d4f64e0b.png",
+    "static/media/naruto.jpg": "/memory-game/static/media/naruto.c83e955f3ee1eed9df4f.jpg",
+    "static/media/logo.png": "/memory-game/static/media/logo.5772813dfb831bafd735.png",
+    "static/media/obito.jpg": "/memory-game/static/media/obito.775f73e76f019062e1c9.jpg",
+    "static/media/orochimaru.jpg": "/memory-game/static/media/orochimaru.d05aea7add6ab956520b.jpg",
+    "static/media/kakashi.jpg": "/memory-game/static/media/kakashi.d246dd5afef4b7f1b998.jpg",
+    "static/media/akamaru.jpg": "/memory-game/static/media/akamaru.13658388a596b0f11923.jpg",
+    "static/media/kurama.jpg": "/memory-game/static/media/kurama.102d72307c8527124f8f.jpg",
+    "static/media/itachi.jpg": "/memory-game/static/media/itachi.f779e1b201b3c1b1d956.jpg",
+    "static/media/jiraiya.jpg": "/memory-game/static/media/jiraiya.be1425dbea7263c00e80.jpg",
+    "static/media/madara.jpg": "/memory-game/static/media/madara.5483220f8a482d95f81b.jpg",
+    "static/media/sasuke.jpg": "/memory-game/static/media/sasuke.ed01ef4edf334700ba23.jpg",
+    "static/media/njnaruto.ttf": "/memory-game/static/media/njnaruto.eb7e0c70752e2f7b008e.ttf",
+    "index.html": "/memory-game/index.html",
+    "main.277e1ef0.css.map": "/memory-game/static/css/main.277e1ef0.css.map",
+    "main.b73d8488.js.map": "/memory-game/static/js/main.b73d8488.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.277e1ef0.css",
+    "static/js/main.b73d8488.js"
+  ]
+}
