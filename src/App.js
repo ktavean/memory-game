@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./Assets/Images/logo.png";
 import naruto from "./Assets/Images/cards/naruto.jpg";
 import sasuke from "./Assets/Images/cards/sasuke.jpg";
@@ -85,6 +85,26 @@ const App = () => {
     }
   )
 
+  useEffect(() => {
+
+
+    const gameCards = [];
+
+    for (let i = 0; i < game.cards.length; i++) {
+      let insertAt = Math.floor(Math.random() * 12);
+      gameCards.splice(insertAt, 0, game.cards[i]);
+    }
+
+    setGame(
+      {
+        ...game,
+        cards: gameCards
+      }
+    )
+
+
+  }, [game.score]);
+
   const handleClick = (img) => {
     const id = img.target.id.slice(4);
     if (game.cards[id].clicked === false) {
@@ -93,10 +113,22 @@ const App = () => {
       setGame(
         {
           ...game,
+          score: game.score + 1,
           cards: newGameCards
         }
       )
-      console.log(img.target.src);
+    } else if (game.cards[id].clicked === true) {
+      const newGameCards = game.cards.slice();
+      for (let card of newGameCards) {
+        card.clicked = false;
+      }
+      setGame(
+        {
+          score: 0,
+          highscore: game.score,
+          cards: newGameCards
+        }
+      )
     }
   }
 
